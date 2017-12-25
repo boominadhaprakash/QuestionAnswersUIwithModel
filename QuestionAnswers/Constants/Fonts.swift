@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class customFont {
-    open class var fontValue:UIFont{return UIFont(name: "Helvetica", size: 14)!}
+class MyFonts {
+    open class var Helvetica_14Font:UIFont{return UIFont(name: "Helvetica", size: 14)!}
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:poc.xcodeproj">
+      location = "self:/Users/sri/Desktop/Boomi/QuestionAnswersUIwithModel/QuestionAnswers.xcodeproj">
    </FileRef>
 </Workspace>

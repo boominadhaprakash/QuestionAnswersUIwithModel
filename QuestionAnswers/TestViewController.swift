@@ -20,7 +20,7 @@ class TestViewController: UIViewController {
         questionCollectionView.dataSource = self
         self.automaticallyAdjustsScrollViewInsets = false
         }}
-    var Questions:[QuestionsModel] = [QuestionsModel]()
+    var questions:[QuestionMeta] = [QuestionMeta]()
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
@@ -32,7 +32,7 @@ class TestViewController: UIViewController {
                 let jsonObj = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [Any]
                 if let json = jsonObj{
                     for i in 0..<json.count {
-                        Questions.append(QuestionsModel.init(resp: json[i] as! Dictionary<String, Any>))
+                        questions.append(QuestionMeta.init(resp: json[i] as! Dictionary<String, Any>))
                     }
                 }
             } catch let error {
@@ -60,9 +60,13 @@ class TestViewController: UIViewController {
     func canRotate() -> Void {}
     
     @objc fileprivate func optionSelectedAct(_ sender:UIButton) {
-        let cell = sender.superview?.superview?.superview as? TestCell
-        sender.isSelected = !sender.isSelected
-        
+        if let cell = sender.superview?.superview?.superview as? TestCell {
+            if let indexPath = self.questionCollectionView.indexPath(for: cell) {
+                sender.isSelected = !sender.isSelected
+                let questionModel = questions[indexPath.item]
+                questionModel.options[sender.tag-1].isSelected = sender.isSelected
+            }
+        }
     }
 }
 
@@ -71,7 +75,7 @@ extension TestViewController:UICollectionViewDelegate,UICollectionViewDataSource
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Questions.count
+        return questions.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TestCell.reuseIdentifier(), for: indexPath) as! TestCell
@@ -79,8 +83,7 @@ extension TestViewController:UICollectionViewDelegate,UICollectionViewDataSource
         cell.option2Btn.addTarget(self, action: #selector(optionSelectedAct(_:)), for: .touchUpInside)
         cell.option3Btn.addTarget(self, action: #selector(optionSelectedAct(_:)), for: .touchUpInside)
         cell.option4Btn.addTarget(self, action: #selector(optionSelectedAct(_:)), for: .touchUpInside)
-        cell.model = Questions[indexPath.item]
-        print(indexPath.item)
+        cell.question = questions[indexPath.item]
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -96,5 +99,5 @@ extension TestViewController:UICollectionViewDelegate,UICollectionViewDataSource
             return CGSize(width: cellWidth, height: cellHeight*1.5)
         }
     }
-        
+    
 }
