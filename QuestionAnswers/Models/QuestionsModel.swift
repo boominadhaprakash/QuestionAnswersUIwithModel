@@ -26,7 +26,6 @@ class QuestionMeta {
     }
     let questionID, mcqAttemptPrevious, mcqId, mcqQuestion, QuestionName, OptionCount, SelectedQuestionId, mcqSelectedOptions, type:Any
     var options:[OptionsMeta] = []
-    var selectedOptions:[String] = [String]()
     let response:Dictionary<String,Any>
     init(resp:Dictionary<String,Any>) {
         response = resp
