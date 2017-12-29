@@ -54,23 +54,25 @@ class TestCell: UICollectionViewCell {
     var question:QuestionMeta?{
         didSet{
             if let m = question {
-                questionName.text = m.mcqQuestion as? String
+                questionName.text = m.mcq_tq_Question as? String
+                print(m.options.count)
                 if m.options.count > 0 {
                     if let option_1 = m.getOption(with: IndexingOptionsSet.set_1.rawValue),
-                        let option_2 = m.getOption(with: IndexingOptionsSet.set_2.rawValue),
-                        let option_3 = m.getOption(with: IndexingOptionsSet.set_3.rawValue) {
+                        let option_2 = m.getOption(with: IndexingOptionsSet.set_2.rawValue) {
                         option1Lbl.text = option_1.option
                         option1Btn.isSelected = option_1.isSelected
-                        
                         option2Lbl.text = option_2.option
                         option2Btn.isSelected = option_2.isSelected
-                        
-                        option3Lbl.text = option_3.option
-                        option3Btn.isSelected = option_3.isSelected
-                        
+                        option3Btn.isHidden = true
+                        option3Lbl.isHidden = true
                         option4Btn.isHidden = true
                         option4Lbl.isHidden = true
-                        
+                        if let option_3 = m.getOption(with: IndexingOptionsSet.set_3.rawValue) {
+                            option3Lbl.text = option_3.option
+                            option3Btn.isSelected = option_3.isSelected
+                            option3Btn.isHidden = false
+                            option3Lbl.isHidden = false
+                        }
                         if let option_4 = m.getOption(with: IndexingOptionsSet.set_4.rawValue) {
                             option4Lbl.text = option_4.option
                             option4Btn.isSelected = option_4.isSelected

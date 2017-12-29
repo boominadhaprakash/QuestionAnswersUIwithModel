@@ -62,10 +62,20 @@ class TestViewController: UIViewController {
     @objc fileprivate func optionSelectedAct(_ sender:UIButton) {
         if let cell = sender.superview?.superview?.superview as? TestCell {
             if let indexPath = self.questionCollectionView.indexPath(for: cell) {
-                sender.isSelected = !sender.isSelected
                 let questionModel = questions[indexPath.item]
-                questionModel.options[sender.tag-1].isSelected = sender.isSelected
+                if questionModel.questionType == .mcq {
+                    questionModel.options[sender.tag-1].isSelected = !sender.isSelected
+                }else {
+                    questionModel.options.forEach({ (options) in
+                        if options == questionModel.options[sender.tag-1] {
+                            options.isSelected = true
+                        } else {
+                            options.isSelected = false
+                        }
+                    })
+                }
             }
+            self.questionCollectionView.reloadData()
         }
     }
 }

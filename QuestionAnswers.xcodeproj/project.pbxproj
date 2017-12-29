@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		105211281FEB755C00458C5D /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105211271FEB755C00458C5D /* QuestionsModel.swift */; };
+		105211281FEB755C00458C5D /* QuestionsMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105211271FEB755C00458C5D /* QuestionsMeta.swift */; };
 		1052112A1FEB764300458C5D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105211291FEB764300458C5D /* TestViewController.swift */; };
 		1052112D1FEB76C200458C5D /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052112B1FEB76C200458C5D /* TestCell.swift */; };
 		1052112E1FEB76C200458C5D /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1052112C1FEB76C200458C5D /* TestCell.xib */; };
@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		105211271FEB755C00458C5D /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
+		105211271FEB755C00458C5D /* QuestionsMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsMeta.swift; sourceTree = "<group>"; };
 		105211291FEB764300458C5D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		1052112B1FEB76C200458C5D /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		1052112C1FEB76C200458C5D /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		105211321FEB8BFD00458C5D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				105211271FEB755C00458C5D /* QuestionsModel.swift */,
+				105211271FEB755C00458C5D /* QuestionsMeta.swift */,
 				105211331FEB8C0900458C5D /* OptionsMeta.swift */,
 			);
 			path = Models;
@@ -300,7 +300,7 @@
 			files = (
 				105211301FEB7A8800458C5D /* Fonts.swift in Sources */,
 				1052112D1FEB76C200458C5D /* TestCell.swift in Sources */,
-				105211281FEB755C00458C5D /* QuestionsModel.swift in Sources */,
+				105211281FEB755C00458C5D /* QuestionsMeta.swift in Sources */,
 				1052112A1FEB764300458C5D /* TestViewController.swift in Sources */,
 				105211341FEB8C0900458C5D /* OptionsMeta.swift in Sources */,
 				32DD6BA21F34947200900CDF /* AppDelegate.swift in Sources */,

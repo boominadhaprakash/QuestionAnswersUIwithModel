@@ -1,118 +1,134 @@
- [{
-  "ID": "0",
-  "MCQ_ATTEMPT_PREVIOUS": "0",
-  "MCQ_ID": "195399",
-  "MCQ_QUESTION": "Soaps are _ salts of carboxylic acids.\n\n(I) sodium\n(II) potassium\n(III) magnesium",
-  "MCQ_SELECTED_OPTIONS": "<null>",
-  "NAME": "MCQ_QUESTION1",
-  "OPTIONS1": {
-  "OPTION1": "All l, ll and lll",
-  "OPTION_ANSWER1": "0",
-  "OPTION_ID1": "713592"
-  },
-  "OPTIONS2": {
-  "OPTION2": "Either I or II",
-  "OPTION_ANSWER2": "1",
-  "OPTION_ID2": "713593"
-  },
-  "OPTIONS3": {
-  "OPTION3": "Both I and IIl",
-  "OPTION_ANSWER3": "0",
-  "OPTION_ID3": "713594"
-  },
-  "OPTIONS4": {
-  "OPTION4": "Both II and lll",
-  "OPTION_ANSWER4": "0",
-  "OPTION_ID4": "713595"
-  },
-  "OPTION_COUNT": "4",
-  "SECTION_QUESTION_ID": "54619",
-  "TYPE": "2"
-  }, {
-  "ID": "1",
-  "MCQ_ATTEMPT_PREVIOUS": "0",
-  "MCQ_ID": "195697",
-  "MCQ_QUESTION": "A soap is prepared from:\n\nA) Animal fat\nB) Vegetable oil",
-  "MCQ_SELECTED_OPTIONS": "<null>",
-  "NAME": "MCQ_QUESTION2",
-  "OPTIONS1": {
-  "OPTION1": "Only A",
-  "OPTION_ANSWER1": "0",
-  "OPTION_ID1": "714648"
-  },
-  "OPTIONS2": {
-  "OPTION2": "Only B",
-  "OPTION_ANSWER2": "0",
-  "OPTION_ID2": "714649"
-  },
-  "OPTIONS3": {
-  "OPTION3": "Both A and B",
-  "OPTION_ANSWER3": "1",
-  "OPTION_ID3": "714650"
-  },
-  "OPTION_COUNT": "3",
-  "SECTION_QUESTION_ID": "54616",
-  "TYPE": "2"
-  }, {
-  "ID": 2,
-  "MCQ_ATTEMPT_PREVIOUS": "0",
-  "MCQ_ID": "195901",
-  "MCQ_QUESTION": "Which salt is used in the preparation of soap?",
-  "MCQ_SELECTED_OPTIONS": "<null>",
-  "NAME": "MCQ_QUESTION3",
-  "OPTIONS1": {
-  "OPTION1": "NaHCO3",
-  "OPTION_ANSWER1": "0",
-  "OPTION_ID1": "715317"
-  },
-  "OPTIONS2": {
-  "OPTION2": "Na2SO4",
-  "OPTION_ANSWER2": "0",
-  "OPTION_ID2": "715318"
-  },
-  "OPTIONS3": {
-  "OPTION3": "NaCl",
-  "OPTION_ANSWER3": "1",
-  "OPTION_ID3": "715319"
-  },
-  "OPTIONS4": {
-  "OPTION4": "Na2CO3",
-  "OPTION_ANSWER4": "0",
-  "OPTION_ID4": "715320"
-  },
-  "OPTION_COUNT": "4",
-  "SECTION_QUESTION_ID": "54612",
-  "TYPE": "2"
-  },
-  {
-  "ID": "3",
-  "MCQ_ATTEMPT_PREVIOUS": "0",
-  "MCQ_ID": "195910",
-  "MCQ_QUESTION": "A soap molecule is made up of __ part(s).",
-  "MCQ_SELECTED_OPTIONS": "<null>",
-  "NAME": "MCQ_QUESTION4",
-  "OPTIONS1": {
-  "OPTION1": "three",
-  "OPTION_ANSWER1": "0",
-  "OPTION_ID1": "715341"
-  },
-  "OPTIONS2": {
-  "OPTION2": "two",
-  "OPTION_ANSWER2": "1",
-  "OPTION_ID2": "715342"
-  },
-  "OPTIONS3": {
-  "OPTION3": "one",
-  "OPTION_ANSWER3": "0",
-  "OPTION_ID3": "715343"
-  },
-  "OPTIONS4": {
-  "OPTION4": "four",
-  "OPTION_ANSWER4": "0",
-  "OPTION_ID4": "968539"
-  },
-  "OPTION_COUNT": "4",
-  "SECTION_QUESTION_ID": "54603",
-  "TYPE": "2"
-  }
-  ]
+[
+ {
+ "ID": "0",
+ "MCQ_ATTEMPT_PREVIOUS": "0",
+ "MCQ_ID": "195399",
+ "MCQ_QUESTION": "Soaps are _ salts of carboxylic acids.\n\n(I) sodium\n(II) potassium\n(III) magnesium",
+ "MCQ_SELECTED_OPTIONS": "<null>",
+ "NAME": "MCQ_QUESTION1",
+ "OPTIONS1": {
+ "OPTION1": "All l, ll and lll",
+ "OPTION_ANSWER1": "0",
+ "OPTION_ID1": "713592"
+ },
+ "OPTIONS2": {
+ "OPTION2": "Either I or II",
+ "OPTION_ANSWER2": "1",
+ "OPTION_ID2": "713593"
+ },
+ "OPTIONS3": {
+ "OPTION3": "Both I and IIl",
+ "OPTION_ANSWER3": "0",
+ "OPTION_ID3": "713594"
+ },
+ "OPTIONS4": {
+ "OPTION4": "Both II and lll",
+ "OPTION_ANSWER4": "0",
+ "OPTION_ID4": "713595"
+ },
+ "OPTION_COUNT": "4",
+ "SECTION_QUESTION_ID": "54619",
+ "TYPE": "2"
+ },
+ {
+ "ID": "1",
+ "MCQ_ATTEMPT_PREVIOUS": "0",
+ "MCQ_ID": "195697",
+ "MCQ_QUESTION": "A soap is prepared from:\n\nA) Animal fat\nB) Vegetable oil",
+ "MCQ_SELECTED_OPTIONS": "<null>",
+ "NAME": "MCQ_QUESTION2",
+ "OPTIONS1": {
+ "OPTION1": "Only A",
+ "OPTION_ANSWER1": "0",
+ "OPTION_ID1": "714648"
+ },
+ "OPTIONS2": {
+ "OPTION2": "Only B",
+ "OPTION_ANSWER2": "0",
+ "OPTION_ID2": "714649"
+ },
+ "OPTIONS3": {
+ "OPTION3": "Both A and B",
+ "OPTION_ANSWER3": "1",
+ "OPTION_ID3": "714650"
+ },
+ "OPTION_COUNT": "3",
+ "SECTION_QUESTION_ID": "54616",
+ "TYPE": "2"
+ },
+ {
+ "ID": 2,
+ "MCQ_ATTEMPT_PREVIOUS": "0",
+ "MCQ_ID": "195901",
+ "MCQ_QUESTION": "Which salt is used in the preparation of soap?",
+ "MCQ_SELECTED_OPTIONS": "<null>",
+ "NAME": "MCQ_QUESTION3",
+ "OPTIONS1": {
+ "OPTION1": "NaHCO3",
+ "OPTION_ANSWER1": "0",
+ "OPTION_ID1": "715317"
+ },
+ "OPTIONS2": {
+ "OPTION2": "Na2SO4",
+ "OPTION_ANSWER2": "0",
+ "OPTION_ID2": "715318"
+ },
+ "OPTIONS3": {
+ "OPTION3": "NaCl",
+ "OPTION_ANSWER3": "1",
+ "OPTION_ID3": "715319"
+ },
+ "OPTIONS4": {
+ "OPTION4": "Na2CO3",
+ "OPTION_ANSWER4": "0",
+ "OPTION_ID4": "715320"
+ },
+ "OPTION_COUNT": "4",
+ "SECTION_QUESTION_ID": "54612",
+ "TYPE": "2"
+ },
+ {
+ "ID": "3",
+ "MCQ_ATTEMPT_PREVIOUS": "0",
+ "MCQ_ID": "195910",
+ "MCQ_QUESTION": "A soap molecule is made up of __ part(s).",
+ "MCQ_SELECTED_OPTIONS": "<null>",
+ "NAME": "MCQ_QUESTION4",
+ "OPTIONS1": {
+ "OPTION1": "three",
+ "OPTION_ANSWER1": "0",
+ "OPTION_ID1": "715341"
+ },
+ "OPTIONS2": {
+ "OPTION2": "two",
+ "OPTION_ANSWER2": "1",
+ "OPTION_ID2": "715342"
+ },
+ "OPTIONS3": {
+ "OPTION3": "one",
+ "OPTION_ANSWER3": "0",
+ "OPTION_ID3": "715343"
+ },
+ "OPTIONS4": {
+ "OPTION4": "four",
+ "OPTION_ANSWER4": "0",
+ "OPTION_ID4": "968539"
+ },
+ "OPTION_COUNT": "4",
+ "SECTION_QUESTION_ID": "54603",
+ "TYPE": "2"
+ },
+ {
+ "ID": "4",
+ "NAME": "TF_QUESTION6",
+ "SECTION_QUESTION_ID": "55522",
+ "TF_ANSWER": "1",
+ "TF_ATTEMPT_PREVIOUS": "0",
+ "TF_CORRECT": "0",
+ "TF_ID": "204513",
+ "TF_QUESTION": "State True/False:\n\nIf the interest is compounded annually, then simple interest and compound interest will be equal for the first year.",
+ "TF_SELECTED_OPTIONS": "<null>",
+ "TYPE": "3"
+ }
+ ]
+
