@@ -66,16 +66,16 @@ class TestViewController: UIViewController {
                 if questionModel.questionType == .mcq {
                     questionModel.options[sender.tag-1].isSelected = !sender.isSelected
                 }else {
-                    questionModel.options.forEach({ (options) in
-                        if options == questionModel.options[sender.tag-1] {
-                            options.isSelected = true
+                    questionModel.options.forEach{option in
+                        if option == questionModel.options[sender.tag-1] {
+                            option.isSelected = true
                         } else {
-                            options.isSelected = false
+                            option.isSelected = false
                         }
-                    })
+                    }
                 }
+                self.questionCollectionView.reloadItems(at: [indexPath])
             }
-            self.questionCollectionView.reloadData()
         }
     }
 }
